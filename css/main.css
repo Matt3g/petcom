@@ -90,7 +90,9 @@ img {vertical-align: middle;}
     max-height: 600px;
     background-color: rgb(255, 255, 255,0.8);
   }
-  
+  .mySlides h1{
+    font-size: 60px;
+  }
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
@@ -248,7 +250,7 @@ img {vertical-align: middle;}
 .about-us .about-banner{
     width: 100%;
     height: 400px;
-    background: url('../images/abt.jpg') no-repeat right center;  
+    background: url('../images/abt.jpg') no-repeat right top;  
     background-size: 100%;  
     display: flex;
     justify-items: center;
@@ -395,14 +397,44 @@ img {vertical-align: middle;}
     font-weight: bold;
     font-size: 20px;
     padding: 20px 10px;
-    color: #0356a4;
+    /* color: #0356a4; */
     text-align: center;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     width: 100%;
+    color: #FFCC33;
+    background-color: #0356a4;
 }
 .prod-dis div p:hover{
     color: #FFCC33;
     background-color: #0356a4;
+    cursor: default;
+}
+.prod-dis-tank div{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin :50px 0px;
+}
+.prod-dis-tank div img {
+    width: 90%;
+    margin: 30px auto;
+}
+.prod-dis-tank div p{
+    position: absolute;
+    bottom: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 10px;
+    /* color: #0356a4; */
+    text-align: center;
+    /* background-color: #f9f9f9; */
+    width: 100%;
+    color: #FFCC33;
+    background-color: #0356a4;
+}
+.prod-dis-tank div p:hover{
+    
     cursor: default;
 }
 /***************************************Products*****************************************/
@@ -418,6 +450,12 @@ img {vertical-align: middle;}
     box-shadow: 2px 3px 15px #d9d9d9;
     border: 1px solid #fff;
     background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.tips section >div img{
+    width: 45%;
+    display: inline-block;
+
 }
 /***************************************Tips*****************************************/
 
@@ -436,26 +474,73 @@ img {vertical-align: middle;}
 /***************************************Services*****************************************/
 
 /***************************************Contact*****************************************/
-
-.contact-us .contact-banner{
-    width: 100%;
-    height: 500px;
-    background: url('../images/contact.jpg') no-repeat center;  
-    background-size: 100%;  
-    display: flex;
-    justify-items: center;
-    align-items: center;
+.contact-us section{
+    padding: 20px 100px;
+    background: url('../images/sun.png') no-repeat center fixed;
 }
 .contact-us section >div{
     padding: 30px 50px 55px 50px;
     margin: 10px 0px;
     box-shadow: 2px 3px 15px #d9d9d9;
     border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
 }
 .contact-us section h1{
     color: #ED1B24;
     text-align: center;
+}
+
+.contact-us form label{
+    display: block;
+}
+#icon{
+    display: inline-block;
+    padding: 9.3px 15px;
+    box-shadow: 1px 2px 5px rgb(0 0 0 / 9%);
+    background: #1c87c9;
+    color: #fff;
+    text-align: center;
+}
+.contact-us h2{
+    font-size: 40px;
+    text-align: center;
+    color: #ED1B24;
+    margin-bottom: 30px;
+}
+.contact-us form p{
+    color: #0356a4;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-us form{
+    text-align: center;
+}
+.contact-us form input{
+    width: 70%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid;
+}
+.contact-us form button{
+    background-color: #ED1B24;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+.contact-us form button:hover{
+    color: #0356a4;
+    background-color: #FFCC33;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 /***************************************Contact*****************************************/
 
